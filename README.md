@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 💸 Solana Pay – Two-Way Payment System
+
+A seamless two-way payment system built with **Next.js**, **Solana Pay**, and **Phantom Wallet** integration. Supports direct user-to-user payments, payment requests, and admin commission tracking.
+
+## Features
+
+✅ **Two-Way Payments**: Users can send and request payments securely via the Solana blockchain.  
+✅ **Admin Commission**: Automatically deducts a 5% commission to the admin wallet.  
+✅ **Phantom Wallet Support**: Allows users to connect and transact with their Phantom wallet.  
+✅ **Payment Requests**: Users can request payments from others.  
+✅ **Transaction History**: View and track all payment transactions.  
+✅ **Admin Dashboard**: Exclusive dashboard for the admin to monitor earnings and user transactions.
+
+## Tech Stack
+
+- **Next.js**: Frontend framework for React applications.
+- **Solana Web3.js**: Blockchain interaction and transaction handling.
+- **Tailwind CSS**: Modern styling with a dark-themed UI.
+- **Phantom Wallet Adapter**: Secure Solana wallet integration.
 
 ## Getting Started
 
-First, run the development server:
-
+### 1. Clone the Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/devp1866/solana-pay-app.git
+cd solana-pay-app
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install Dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 3. Set Environment Variables
+Create a `.env.local` file in the root directory and add your admin wallet:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```env
+NEXT_PUBLIC_ADMIN_WALLET=YourAdminWalletAddress
+```
 
-## Learn More
+### 4. Run the Development Server
+```bash
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Access the app at: [http://localhost:3000](http://localhost:3000)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Connect Wallet**: Users must connect their Phantom wallet.
+2. **Send Payment**: Initiate Solana payments with automatic admin commission.
+3. **Request Payment**: Users can request payments from others.
+4. **Admin Dashboard**: Exclusive admin view for tracking all transactions and commissions.
 
-## Deploy on Vercel
+## Contributing
+Feel free to submit issues and pull requests!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
+This project is licensed under the [MIT License](LICENSE).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
